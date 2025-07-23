@@ -1,0 +1,38 @@
+% !TEX root = main.tex
+
+\section{Related Work}
+
+\subsection{Eye-tracking in HCI}
+
+The use of eye-tracking has been extensively researched and applied across a wide range of domains. Although initially conceived primarily for behavioral and psychological studies, a practice that remains prevalent, eye-tracking was originally employed to gain insights into human cognition and behavior, rather than as a mechanism for user input. For instance, Zelinskyi et al.\ developed a Chrome extension designed to collect eye-tracking data for behavioral analysis~\cite{zelinskyi2024eyetracking}. Similarly, Jacob and Karn discuss the role of eye-tracking in usability research, emphasizing its value for evaluating user interfaces~\cite{jacob2003commentary}.
+
+Over time, researchers have explored eye-tracking as a viable input modality within HCI. Notably, Gips et al.\ introduced an eye-controlled system in the late 1990s, specifically aimed at improving accessibility for individuals with motor impairments~\cite{gips1996eagleeyes}. Such efforts have continued into recent years and different applications. Dondi et al.\ examined the role of eye-tracking in immersive museum and exhibition experiences~\cite{dondi2023gazehci}, while Karlander and Wang integrated eye-tracking into artificial intelligence image editing software~\cite{karlander2023ai}.
+
+Recent advancements in consumer-grade augmented and virtual reality headsets, such as the Meta Quest Pro, Pico 4 Pro, and Apple Vision Pro, have significantly increased the adoption of integrated eye-tracking technologies~\cite{huang2024visionpro}. Some of these devices, most notably the Apple Vision Pro, rely entirely on eye-tracking and hand gestures for user interaction, eliminating the need for traditional physical input peripherals.
+
+Accessible HCI has also integrated eye-tracking. For example, Wang et al.\ introduced \textit{GazePrompt}, a gaze-aware reading aid for low-vision users. The system offers line-switching support, which highlights or indicates the next line as the user reads, and difficult-word support, which automatically magnifies or reads aloud a word when user hesitation is detected~\cite{wang2024gazeprompt}. Additionally, commercial eye-tracking hardware is increasingly embedded in assistive devices. Tobii Dynavox's TD Pilot, for instance, is an iPad-based \ac{AAC} device that allows users to control the interface using only their eyes~\cite{poster2025td}.
+
+\subsection{Speech recognition NLP in HCI}
+
+\ac{NLP} has similarly demonstrated significant potential in assistive contexts within HCI as an input method~\cite{song2024review}. 
+
+Conversational assistants represent a widely adopted interface paradigm enabled by NLP. Established systems such as Siri~\cite{apple_siri}, Google Assistant~\cite{google_assistant}, and Alexa~\cite{amazon_alexa} have become integrated deeply to many consumer devices. More recently, generative AI has facilitated the emergence of other assistants, including ChatGPT~\cite{openai_chatgpt} and Gemini~\cite{google_gemini}. Notably, these assistants typically operate as discrete applications rather than as embedded control layers, meaning users must actively invoke them within specific contexts rather than relying on them for continuous, system-wide interaction.
+
+In the context of accessibility, Girón-Bastidas et al.\ emphasize the effectiveness of NLP-based technologies in supporting users with hearing impairments, highlighting their utility in communication and interface adaptation~\cite{gironbastidas2019nlp}. Martínez et al. also developed a tool for simplifying online content, enabling understandability for people with cognitive disabilities~\cite{martinez2024tool}. Avalos et al. propose a context-based model that allows for browsing the web through voice. The system utilizes user utterances to command the system entirely; thereby enabling users with motor disabilities to engage with web content~\cite{avalos2025context}. These efforts exemplify NLP is highly adaptable to many use-cases.
+
+NLP also finds application across a variety of other domains. In educational contexts for instance, NLP-enabled assistive technologies have been shown to enhance learning by supporting more immersive and interactive experiences~\cite{terzopoulos2020voice}. Additionally, conversational agents have been employed to facilitate a wide range of instructional and communicative interactions~\cite{liu2024chatgpt}.
+
+\subsection{Multimodal interfaces}
+
+The integration of gaze data with speech input represents a growing area of research in multimodal HCI. Khan et al.\ propose a system that combines eye-tracking with voice commands for implicit interaction, using gaze to reinforce the user's spoken intent~\cite{khan2022integrating}. Lee et al.\ introduce GazePointAR, a wearable system that leverages both eye-tracking and speech recognition to support real-time image recognition and context-aware assistance~\cite{lee2024gazepointar}. Similarly, Zhao et al.\ present EyeSayCorrect, an autocorrection system that uses both modalities to improve speech-based text input~\cite{zhao2022eyesaycorrect}.
+
+\subsection{The Future of the Web}
+
+The increasing prevalence of eye-tracking in mainstream consumer devices presents new challenges and opportunities for web design. Panwar examines the evolution of web applications from their static origins to highly dynamic, complex systems. The study emphasizes the growing importance of multimodal interaction, predicting that future interfaces will increasingly combine touch, voice, text, and gesture to meet user expectations~\cite{panwar2024webevolution}. This underlines the need for web interfaces to adapt for supporting eye-based interaction, favoring larger and more visually distinct elements over traditional hyperlink-based controls~\cite{apple2024spatialweb}.
+
+
+\subsection{Record-and-Replay Testing}
+
+Record-and-replay testing enables developers to capture user interactions during runtime and replay them for debugging, regression testing, or usability evaluation\cite{vasquez2018continuous, moran2016automatically}. In this context, this approach provides a practical means of reproducing complex interaction sequences in controlled environments. Consequently, record-and-replay testing is becoming a vital component of usability studies and system validation in immersive and gaze-aware interfaces.
+
+

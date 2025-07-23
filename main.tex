@@ -1,0 +1,81 @@
+\documentclass[10pt, conference]{IEEEtran}
+% \IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{orcidlink}
+\usepackage{acronym}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\input{preamble}
+\input{acronyms}
+\begin{document}
+
+\title{EyeNav: Accessible Interaction and Testing using Eye-tracking and Natural Language Processing}
+
+\author{
+    \IEEEauthorblockN{
+        Juan Diego Yepes-Parra \orcidlink{0009-0007-0672-1473}, 
+        Camilo Escobar-Velásquez \orcidlink{0000-0001-8414-9301}
+    }
+    \IEEEauthorblockA{
+        \textit{Universidad de los Andes, Colombia} \\
+        \{j.yepes, ca.escobar2434\}@uniandes.edu.co
+    }
+}
+
+\maketitle
+
+\begin{abstract}
+% TODO 
+%! tengo que citarme a mi mismo??
+% use acronyms
+% github
+% screencast
+%   - Briefly state: envisioned users; SE challenge addressed; key features of the tool;
+%     methodology integration (eye-tracking + NLP); validation status (studies done or planned).
+%   - Append:
+%     * YouTube link to screencast
+%     * URL for open-source code & datasets
+In the field of \ac{HCI}, alternative interaction methods are becoming increasingly popular and commercialy available. From this opportunity came EyeNav, a system that combines eye-tracking and natural language processing (NLP) to enhance accessibility and enable automated test generation. The integration of these technologies for intuitive web interaction, using pointer control via gaze and natural language processing for interpreting user intentions, also presents a record-and-replay module for generating automated test scripts. Envisioned for users with motor disabilities, developers, usability testers, and general users interested in exploring novel multimodal web interactions. %add the other modalities
+The ultimate goal is to demonstrate that this tool can be used not only as a possible assistive technology but also as an innovative approach to software testing. The tool is available publicly \href{https://tinyurl.com/eyenav-repo}{https://tinyurl.com/eyenav-repo}, with a walkthrough video \href{https://tinyurl.com/eyenav-repo}{https://tinyurl.com/eyenav-repo} %! cambiar uno de estos por el video
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+% TODO
+Eye-tracking; Automated Test Generation; Assistive Technology; Natural Language Processing; Web Applications; Accessibility.
+\end{IEEEkeywords}
+
+% must include:
+% the envisioned users;
+% the software engineering challenge the tool addresses;
+% the methodology it implies for its users;
+% the results of validation studies already conducted (for mature tools) or - the design of planned studies (for early prototypes).
+
+% A demonstration submission must not exceed four pages (including all text, references, and figures);
+% Authors are required to submit a screencast of the tool, with the video link attached to the end of the abstract;
+% Authors are encouraged to make their code and datasets open source, with the link for the code and datasets attached to the end of the abstract;
+
+
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/content}
+\input{sections/conclusion}
+
+
+% \section*{Acknowledgment} 
+
+
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{local,bib/testing,bib/tools}
+
+\end{document}

@@ -5,7 +5,7 @@
 \begin{figure}[h]
 	\centering
 	\vspace{-10pt}
-	\includegraphics[width=180pt]{imgs/diagram-context.png}
+	\includegraphics[width=0.7\linewidth]{imgs/diagram-context.png}
 	\caption{Context diagram of the system.}
 	% \vspace{-10pt}
 	\label{fig:context}
@@ -34,9 +34,7 @@ User input is captured via an eye-tracker and microphone, while the underlying p
     \label{fig:components-diagram}
 \end{figure}
 
-Figure ~\ref{fig:components-diagram} presents the complete component architecture of the system.
-
-The Chrome extension serves as the front-end interface, providing real-time textual feedback for recognized voice commands and capturing user interaction events. Click events are detected on the frontend and forwarded as HTTP POST requests to the backend to preserve contextual information, such as the associated HTML tag. 
+Figure ~\ref{fig:components-diagram} presents the complete component architecture of the system. The Chrome extension serves as the front-end interface, providing real-time textual feedback for recognized voice commands and capturing user interaction events. Click events are detected on the frontend and forwarded as HTTP POST requests to the backend to preserve contextual information, such as the associated HTML tag. 
 
 Eye tracking is powered by the Tobii Pro Nano, a single-camera dark/bright pupil system with corneal reflection and a typical latency of approximately 17 ms~\cite{tobiiabndpronano}. The gaze-driven pointer control module uses the \verb|tobii-research| Python SDK to access real-time gaze data and interpolate cursor movement accordingly.
 
@@ -65,12 +63,12 @@ Feature: Replay of session on MM DD at HH:MM:SS [AM/PM]
 @user1 @web
 Scenario: User interacts with the web page named "Amazon.com. Spend less. Smile more."
 
-	Given I navigate to page "https://www.amazon.com/"
-	And I click on tag with id "twotabsearchtextbox"
-	And I input "nike black shoes"
-	And I click on tag with id "nav-search-submit-button"
-	And I scroll down
-	And I click on tag with xpath "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[9]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/span[1]/a[1]/div[1]"
+    Given I navigate to page "https://www.amazon.com/"
+    And I click on tag with id "twotabsearchtextbox"
+    And I input "nike black shoes"
+    And I click on tag with id "nav-search-submit-button"
+    And I scroll down
+    And I click on tag with xpath "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[9]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/span[1]/a[1]/div[1]"
 \end{lstlisting}
 
 The latter is an example of a generated test file. Each instruction is written in Gherkin syntax, promoting both human readability and maintainability. This format is particularly accessible to non-technical stakeholders while remaining fully compatible with the automated testing frameworks employed in the system.
